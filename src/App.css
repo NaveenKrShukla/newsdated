@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px; /* fixed height for title */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-text {
+  height: 100px; /* fixed height for description */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.my-3 {
+  margin: 1rem 0;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+.badge {
+  background-color: #dc3545;
   color: white;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.footer {
+  background-color: #343a40;
+  color: #fff; 
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
